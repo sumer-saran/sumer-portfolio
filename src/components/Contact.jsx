@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } from "../constants";
 import Footer from "./Footer";
+
 const Contact = () => {
 	const formRef = useRef();
 	const [form, setForm] = useState({
@@ -47,11 +48,11 @@ const Contact = () => {
 			.send(
 				EMAIL_JS_SERVICE_ID,
 				EMAIL_JS_TEMPLATE_ID,
-				{
+				{	
 					from_name: username,
-					to_name: "Nithin Manda",
+					to_name: "Sumer Saran",
 					reply_to: user_email,
-					to_email: "goudnithin77@gmail.com",
+					to_email: "sumeraligh@gmail.com",
 					message: user_message,
 				},
 				EMAIL_JS_PUBLIC_KEY
@@ -129,7 +130,7 @@ const Contact = () => {
 
 						<button
 							type='submit'
-							className='pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900'
+							className='contact-submit py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md'
 						>
 							{loading ? "Sending..." : "Send"}
 						</button>

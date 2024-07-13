@@ -32,9 +32,13 @@ const About = () => {
       <div className='flex flex-col justify-around'>
         <div className='sm:px-16 px-2'>
           <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Sumer Saran Aligh, a 2023 CSE graduate from BITS Pilani🎓 with a passion for crafting robust solutions.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/sumersaranaligh/' target='_blank'>Software developer</a>. I specialize in MERN, Laravel, Woocommerce (E-Com) stacks and fluent in handling Python backend systems like Djanga and Flask as well🚀. 
+          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Sumer Saran Aligh, a 2023 CSE graduate from BITS Pilani🎓 with a passion for crafting robust solutions adhering to complex business requirements. As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/sumersaranaligh/' target='_blank'>Full Stack Developer</a>, I specialize in creating solid backend systems using Node.js, Express.js, PHP (Woocommerce & Laravel), Python (Flask & Django) and fluent in React, JavaScript (jQuery), HTML, CSS for a perfect UX 🚀. 
           <br/><br/>
-            Apart from development, I am a sportsperson and played cricket throughout my journey. I play the guitar and love singing along with it. Do checkout my singing instagram handle and give your valuable feedback. 
+            Apart from development, I am a sportsperson and played cricket throughout my journey as the captain of my university and school team. 
+            <br/>
+            I also love to play the guitar sing along with it. Do check out my singing instagram handle and give your valuable feedback.
+            <br/><br/>
+            I am currently working as a Junior Software Developer at Sharaf DG, Dubai, UAE with a track record of delivering complex projects timely helping to grow the business by substantial margins. You can read more about my work in the experience section or view my resume.
           </p>
           <br/><br/>
           <ButtonLink

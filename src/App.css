@@ -148,6 +148,20 @@
 	animation-duration: 11s;
 }
 
+.h-screen {
+    height: 100%;
+}
+
+.contact-submit {
+	background: #5A189A;
+	transition: background 0.3s ease;
+  }
+  
+.contact-submit:hover {
+background: #240046; /* Change this to your desired hover background color */
+}
+  
+
 @keyframes animate {
 	0% {
 		transform: translateY(0) rotate(0deg);
