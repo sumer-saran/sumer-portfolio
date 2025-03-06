@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div>
 
-    <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about py-12 mt-8 overflow-x-hidden' id='about'>
+    <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about px-4 py-12 mt-8 overflow-x-hidden' id='about'>
       <div className='flex flex-col justify-around'>
         <div className='sm:px-16 px-2'>
           <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
@@ -50,7 +50,7 @@ const About = () => {
             url='https://www.instagram.com/sumerplays/'
             text='View Instagram →'
             padding={`p-3`}
-          />
+          />         
 
         </div>
         <div className='mt-20 flex justify-center flex-wrap gap-7'>

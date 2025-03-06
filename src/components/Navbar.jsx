@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 p-4 text-white fixed w-full z-10 top-0" style={{ cursor: 'default' }}>
-      <div className="mx-auto text-center flex w-5/6 justify-between">
+      <div className="mx-auto text-center flex w-full sm:w-5/6 justify-between">
         
         <div className="hidden sm:flex space-x-4 items-center text-sm">
           <Link to='/'>Home</Link>
@@ -30,13 +30,12 @@ const Navbar = () => {
           <a href="/">Sumer Saran Aligh</a>
         </div>
         <div className="hidden sm:flex space-x-4 items-center text-sm">
-          <Link to='/projects'>Projects</Link>
           <Link to='/experience'>Experience</Link>
           <Link to='/contact'>Contact</Link>
         </div>
 
         <div className="sm:hidden">
-          <button onClick={toggleMobileMenu} className="text-xl focus:outline-none">
+          <button onClick={toggleMobileMenu} className="text-3xl focus:outline-none w-8 h-8">
             {isMobileMenuOpen ? '✕' : '☰'}
           </button>
         </div>
@@ -47,8 +46,7 @@ const Navbar = () => {
           <ul className="font-medium text-2xl space-y-4">
             <li><Link to='/' onClick={closeMobileMenu}>Home</Link></li>
             <li><Link to='/about' onClick={closeMobileMenu}>About</Link></li>
-            <li><Link to='/projects' onClick={closeMobileMenu}>Projects</Link></li>
-            <li><Link to='/experience' onClick={closeMobileMenu}>Experince</Link></li>
+            <li><Link to='/experience' onClick={closeMobileMenu}>Experience</Link></li>
             <li><Link to='/contact' onClick={closeMobileMenu}>Contact</Link></li>
           </ul>
         </div>
