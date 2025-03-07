@@ -28,39 +28,69 @@ const About = () => {
   return (
     <div>
 
-    <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about px-4 py-12 mt-8 overflow-x-hidden' id='about'>
-      <div className='flex flex-col justify-around'>
-        <div className='sm:px-16 px-2'>
-          <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Sumer Saran Aligh, a 2023 CSE graduate from BITS Pilani🎓 with a passion for crafting robust solutions adhering to complex business requirements. As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/sumersaranaligh/' target='_blank'>Full Stack Developer</a>, I specialize in creating solid backend systems using Node.js, Express.js, PHP (Woocommerce & Laravel), Python (Flask & Django) and fluent in React, JavaScript (jQuery), HTML, CSS for a perfect UX 🚀. 
-          <br/><br/>
-            Apart from development, I am a sportsperson and played cricket throughout my journey as the captain of my university and school team. 
-            <br/>
-            I also love to play the guitar sing along with it. Do check out my singing instagram handle and give your valuable feedback.
-            <br/><br/>
-            I am currently working as a Junior Software Developer at Sharaf DG, Dubai, UAE with a track record of delivering complex projects timely helping to grow the business by substantial margins. You can read more about my work in the experience section or view my resume.
-          </p>
-          <br/><br/>
-          <ButtonLink
-            url='https://docs.google.com/document/d/13Cqzche8LBBJlOC_gafl4aY9aamyqjb9zf9L-V-LH4I/edit?usp=sharing'
-            text='View Resume →'
-            padding={`p-3`}
-          />
-          <ButtonLink
-            url='https://www.instagram.com/sumerplays/'
-            text='View Instagram →'
-            padding={`p-3`}
-          />         
+      <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about px-4 py-12 mt-8 overflow-x-hidden' id='about'>
+        <div className='flex flex-col justify-around'>
+          <div className='sm:px-16 px-2'>
+            <div class="max-w-4xl mx-auto my-8 text-center">
+              <h2 class="text-4xl sm:text-5xl font-extrabold mt-2">Get to know me...</h2>
+              <p class="mt-4 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto">
+                👨‍💻 Hey there! I'm <span class="font-semibold">Sumer Saran Aligh</span>, a
+                <a class="text-green-300 hover:text-green-500 duration-300" href="https://www.linkedin.com/in/sumersaranaligh/"> Full Stack Developer </a> passionate about building scalable, high-performance applications that solve real-world problems.
+                With a strong foundation in <span class="font-semibold">Python, PHP, and JavaScript</span>, I craft robust backend systems and seamless frontend experiences, ensuring efficiency and top-notch user engagement.
+              </p>
+              <p class="mt-6 text-lg sm:text-xl leading-relaxed">
+                🚀 Currently, I work as a <span class="font-semibold">Full Stack Developer at Panafrican Group</span>, leveraging cutting-edge technologies to develop solutions that drive business growth.
+                Previously, I contributed at <span class="font-semibold">Sharaf DG, Dubai</span>, delivering impactful projects that optimized operations and enhanced customer experiences.
+              </p>
 
-        </div>
-        <div className='mt-20 flex justify-center flex-wrap gap-7'>
-          {services.map((service) => (
-            <ServiceCard service={service} />
-          ))}
+              <div class="mt-8 text-left">
+                <h3 class="text-2xl font-bold text-green-300">Tech Stack & Expertise</h3>
+                <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-lg leading-relaxed">
+                  <li>✅ <span class="font-semibold">Backend:</span> Django, Flask, Laravel, Node.js</li>
+                  <li>✅ <span class="font-semibold">Frontend:</span> React.js, JavaScript (jQuery), HTML, CSS</li>
+                  <li>✅ <span class="font-semibold">DevOps & Infrastructure:</span> Docker, Kubernetes, Git, Azure DevOps</li>
+                  <li>✅ <span class="font-semibold">Architecture:</span> Microservices, API Development, Cloud Solutions</li>
+                </ul>
+              </div>
+
+              <div class="mt-8 text-left">
+                <h3 class="text-2xl font-bold text-green-300">Beyond Code</h3>
+                <ul class="mt-4 text-lg leading-relaxed">
+                  <li>🏏 <span class="font-semibold">Cricket Enthusiast</span> – Led my university and school teams as captain, strategizing on and off the field.</li>
+                  <li>🎸 <span class="font-semibold">Musician at Heart</span> – I love playing the guitar and singing. Feel free to check out my
+                    <a href="https://www.instagram.com/sumerplays/" class="text-green-300 hover:text-green-500 duration-300"> Instagram </a> for my covers!
+                  </li>
+                </ul>
+              </div>
+
+              <p class="mt-8 text-lg sm:text-xl leading-relaxed">
+                With a problem-solving mindset and a passion for continuous learning, I am always looking for exciting challenges that push the boundaries of technology.
+                <span class="font-semibold">Let's connect and build something amazing! 🚀</span>
+              </p>
+            </div>
+
+            <div className="flex justify-center gap-4 sm:gap-8">
+              <ButtonLink
+                url='https://docs.google.com/document/d/13Cqzche8LBBJlOC_gafl4aY9aamyqjb9zf9L-V-LH4I/edit?usp=sharing'
+                text='View Resume →'
+                padding={`p-3`}
+              />
+              <ButtonLink
+                url='https://www.linkedin.com/in/sumersaranaligh/'
+                text='View LinkedIn →'
+                padding={`p-3`}
+              />
+            </div>
+
+          </div>
+          <div className='mt-10 flex justify-center flex-wrap gap-8'>
+            {services.map((service) => (
+              <ServiceCard service={service} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </div>
   )
 }
