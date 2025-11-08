@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, GraduationCap, Award, Rocket, Landmark, TimerReset, ArrowRight, ExternalLink } from "lucide-react";
+import { Linkedin, Mail, GraduationCap, Award, Rocket, Landmark, TimerReset, ArrowRight, ExternalLink } from "lucide-react";
 import Footer from "./Footer";
 import "../App.css";
 import AboutCodePlaygroundSection from "./AboutCodePlayground";
@@ -163,7 +163,7 @@ function ReactionTimeGame() {
       <CardContent className="p-6 flex flex-col items-center gap-4">
         <div className="flex items-center gap-2"><TimerReset className="h-5 w-5" /><span className="font-semibold">Reaction Time</span></div>
         <p className="text-sm text-white/80">Test your reflexes! Best: {best ? `${best} ms` : "—"}</p>
-        <div onClick={click} className={`w-full h-40 rounded-xl grid place-items-center text-2xl font-bold transition-colors select-none cursor-pointer ${state === "now" ? "bg-emerald-500/60" : state === "waiting" ? "bg-yellow-500/40" : state === "scored" ? "bg-indigo-500/40" : "bg-zinc-800/60"}`}>
+        <div onClick={click} className={`w-full h-40 rounded-xl grid place-items-center text-xl sm:text-2xl font-bold transition-colors select-none cursor-pointer ${state === "now" ? "bg-emerald-500/60" : state === "waiting" ? "bg-yellow-500/40" : state === "scored" ? "bg-indigo-500/40" : "bg-zinc-800/60"}`}>
           {message}
         </div>
         <div className="flex gap-2">
@@ -210,15 +210,15 @@ export default function About() {
                 className="min-h-[220px]"
                 front={
                   <Card className="h-full bg-white/5 border-white/10">
-                    <CardContent className="h-full p-6 flex flex-col justify-between">
+                    <CardContent className="h-full sm:p-6 flex flex-col justify-between">
                       <div>
                         {/* Top: Logo + Title */}
-                        <div className="flex flex-wrap items-center gap-3 mb-6">
+                        <div className="flex flex-wrap items-center gap-3 mb-2 sm:mb-6">
                           {j.logo && (
                             <img
                               src={j.logo}
                               alt={j.title}
-                              className="w-16 h-6 sm:h-8 object-contain ms-4 mb-0 me-6 sm:mb-0"
+                              className="w-16 h-4 sm:h-8 sm:h-8 object-contain ms-4 mb-0 me-6"
                             />
                           )}
                           <h3 className="text-lg sm:text-xl font-bold leading-snug text-white">
@@ -378,7 +378,7 @@ export default function About() {
             <p className="mt-2 text-white/80">Have an idea, a tough problem, or a product that needs scale? I’d love to help.</p>
             <div className="mt-5 flex items-center justify-center gap-3">
               <a href="mailto:sumeraligh@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Mail className="h-4 w-4" /> Email</a>
-              <a href="https://github.com/sumersaran" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Github className="h-4 w-4" /> GitHub</a>
+              {/* <a href="https://github.com/sumer-saran" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Github className="h-4 w-4" /> GitHub</a> */}
               <a href="https://www.linkedin.com/in/sumersaranaligh/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Linkedin className="h-4 w-4" /> LinkedIn</a>
             </div>
           </CardContent>
