@@ -264,9 +264,8 @@ export default function About() {
                       />
 
                       {/* summary text */}
-                      <p className="text-white/90 font-medium leading-relaxed max-w-md text-[15px]">
-                        {j.summary ||
-                          "Designed and developed core modules enhancing scalability, reliability, and user experience across mission-critical systems."}
+                      <p className="text-white/90 font-medium leading-relaxed max-w-md text-[12px] sm:text-[15px]">
+                        {j.summary}
                       </p>
 
                       <a
