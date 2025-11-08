@@ -48,6 +48,7 @@ export default function AboutCodePlaygroundSection() {
             }
         }, speed);
         return () => clearInterval(ticker);
+    // eslint-disable-next-line
     }, []);
 
     return (

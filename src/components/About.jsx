@@ -377,9 +377,9 @@ export default function About() {
             <h3 className="text-2xl sm:text-3xl font-extrabold">Let’s build something amazing together</h3>
             <p className="mt-2 text-white/80">Have an idea, a tough problem, or a product that needs scale? I’d love to help.</p>
             <div className="mt-5 flex items-center justify-center gap-3">
-              <a href="mailto:sumeraligh@gmail.com" target="_blank" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Mail className="h-4 w-4" /> Email</a>
-              <a href="https://github.com/sumersaran" target="_blank" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Github className="h-4 w-4" /> GitHub</a>
-              <a href="https://www.linkedin.com/in/sumersaranaligh/" target="_blank" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Linkedin className="h-4 w-4" /> LinkedIn</a>
+              <a href="mailto:sumeraligh@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Mail className="h-4 w-4" /> Email</a>
+              <a href="https://github.com/sumersaran" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Github className="h-4 w-4" /> GitHub</a>
+              <a href="https://www.linkedin.com/in/sumersaranaligh/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 hover:bg-white/20"><Linkedin className="h-4 w-4" /> LinkedIn</a>
             </div>
           </CardContent>
         </Card>
